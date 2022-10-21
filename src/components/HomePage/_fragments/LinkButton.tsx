@@ -1,11 +1,14 @@
-import { Flex, Box, Button, Highlight, Text } from "@chakra-ui/react";
 import React from "react";
+import { Button, ButtonProps } from "@chakra-ui/react";
 
-// interface LinkButtonProps {}
-
-function LinkButton(props:any) {
+function LinkButton({ ...props }: ButtonProps) {
   return (
-    <Button bg="white" p="24px 56px" borderRadius="full" {...props}></Button>
+    <Button
+      bg="white"
+      p="24px 56px"
+      borderRadius="full"
+      m="auto"
+      {...props}></Button>
   );
 }
 
