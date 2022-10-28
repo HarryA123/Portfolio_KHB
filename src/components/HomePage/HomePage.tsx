@@ -46,19 +46,19 @@ function HomePage() {
           </Text>
           <LinkButton mt="146px">WOKRS</LinkButton>
         </Flex>
-        <Box pos="absolute" px="700" top="30%">
+        <Box pos="absolute" left="500px" top="30%">
           <ScrambleText
             color="secondary"
             phrases={["Nice to meet you"]}
             delay={500}></ScrambleText>
         </Box>
-        <Box pos="absolute" right="700px" top="40%">
+        <Box pos="absolute" right="500px" top="40%">
           <ScrambleText
             color="secondary"
             phrases={["Wanna hire me?"]}
             delay={800}></ScrambleText>
         </Box>
-        <Box pos="absolute" px="1100px" top="65%">
+        <Box pos="absolute" left="1100px" top="65%">
           <ScrambleText
             color="secondary"
             phrases={["Let's Go!"]}
@@ -102,9 +102,18 @@ function HomePage() {
         <Flex direction="column" id="workComponent" gap="50px" my="232px">
           <ListTitle name="03. WORKS" query="03." />
           <Flex direction="column" id="ProjectList" gap="240px">
-            <ProjectItem />
-            <ProjectItem />
-            <ProjectItem />
+            {PROJECT.map(item => {
+              return (
+                <ProjectItem
+                  key={item.title}
+                  mainSkill={item.mainSkill}
+                  title={item.title}
+                  link={item.link}
+                  github={item.github}
+                  description={item.description}
+                />
+              );
+            })}
             <Flex gap="20px">
               <ProjectItemSm />
               <ProjectItemSm />
@@ -137,3 +146,31 @@ function HomePage() {
 }
 
 export default HomePage;
+
+const PROJECT = [
+  {
+    mainSkill: "React.js",
+    title: "news",
+    link: "https://react-news-mu.vercel.app/",
+    github: "https://github.com/HarryA123/React-ToyProjects/tree/main/news",
+    description:
+      "Since the value attribute is set on our form element, the displayed value will always be this.state.value, making the React state the source of truth. Since handleChange runs on every keystroke to update the React state, the displayed value will update as the user types. With a controlled component, the input’s value is always driven by the t handlers.",
+  },
+  {
+    mainSkill: "React.js",
+    title: "movie",
+    link: "https://react-movie-app-three-pink.vercel.app/",
+    github:
+      "https://github.com/HarryA123/React-ToyProjects/tree/main/movie-app",
+    description:
+      "Since the value attribute is set on our form element, the displayed value will always be this.state.value, component, the input’s value is always driven by the React state. While this means you have to type a bit more code, you can now pass the value to other UI elements too, or reset it from other event handlers.",
+  },
+  {
+    mainSkill: "React.js",
+    title: "blog",
+    link: "https://blog-delta-olive.vercel.app/",
+    github: "https://github.com/HarryA123/React-ToyProjects/tree/main/blog",
+    description:
+      "Since the value attribute is set on our form element, the displayed value will always be this.state.value, making the React state the source of truth. Since handleChange runs on every keystroke to uy the React state. While this means you have to type a bit more code, you can now pass the value to other UI elements too, or reset it from other event handlers.",
+  },
+];
