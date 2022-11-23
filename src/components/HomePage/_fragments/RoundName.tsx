@@ -15,6 +15,7 @@ function RoundName({ name }: SkillGageProps) {
       border="2px"
       p="6px 16px"
       color="white"
+      margin="auto"
       borderColor="secondary">
       {name}
     </Box>
