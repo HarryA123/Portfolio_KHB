@@ -1,35 +1,21 @@
 import {
   Flex,
+  Link,
   Box,
-  Image,
-  Button,
-  Highlight,
   Text,
   IconButton,
-  Icon,
 } from "@chakra-ui/react";
 // import gsap from "gsap/dist/gsap";
 import React from "react";
-import { Email } from "../../../public/icons/Email";
-import { Phone } from "../../../public/icons/Phone";
 import ProjectItem from "./_fragments/ProjectItem";
-import { Blog } from "../../../public/icons/Blog";
 import LinkButton from "./_fragments/LinkButton";
 import ScrambleText from "./ScrambleText";
 import SkillBox from "./_fragments/SkillBox";
 import ListTitle from "./_fragments/ListTitle";
-import { Github } from "../../../public/icons/Github";
-import RoundName from "./_fragments/RoundName";
-import ProjectItemSm from "./_fragments/ProjectItemSm";
+
 import { UpPage } from "../../../public/icons/UpPage";
 
 function HomePage() {
-  const scrollToTop = () => {
-    window.scroll({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
   return (
     <>
       <Flex id="container_1" pos="relative" bg="background" h="100vh">
@@ -44,7 +30,11 @@ function HomePage() {
           <Text color="primary" fontSize="60px">
             Frontend-Developer
           </Text>
-          <LinkButton mt="146px">WOKRS</LinkButton>
+          <Link href="#container_3" margin="auto">
+            <LinkButton mt="146px">
+              WOKRS
+            </LinkButton>
+          </Link>
         </Flex>
         <Box pos="absolute" left="500px" top="30%">
           <ScrambleText
@@ -99,7 +89,7 @@ function HomePage() {
         justifyContent="center"
         gap="20px"
         alignItems="center">
-        <Flex direction="column" id="workComponent" gap="50px" my="232px">
+        <Flex direction="column" id="workComponent" gap="50px" my="150px">
           <ListTitle name="03. WORKS" query="03." />
           <Flex direction="column" id="ProjectList" gap="240px">
             {PROJECT.map(item => {
@@ -108,17 +98,13 @@ function HomePage() {
                   key={item.title}
                   mainSkill={item.mainSkill}
                   title={item.title}
+                  image={item.image}
                   link={item.link}
                   github={item.github}
                   description={item.description}
                 />
               );
             })}
-            <Flex gap="20px">
-              <ProjectItemSm />
-              <ProjectItemSm />
-              <ProjectItemSm />
-            </Flex>
           </Flex>
         </Flex>
       </Flex>
@@ -126,20 +112,23 @@ function HomePage() {
         id="container_3"
         pos="relative"
         bg="background"
-        h="500px"
+        h="300px"
         justifyContent="center"
         alignItems="center"
         gap="30px"
         direction="column">
-        <IconButton
-          onClick={scrollToTop}
-          variant="link"
-          aria-label="githubIcon"
-          icon={<UpPage />}
-        />
-        <Text color="secondary" fontSize="40px">
-          Thank You!
-        </Text>
+        <Flex direction="column" justifyContent="center">
+          <Link href="#" margin="auto">
+            <IconButton
+              variant="link"
+              aria-label="githubIcon"
+              icon={<UpPage />}
+            />
+          </Link>
+          <Text color="secondary" fontSize="40px">
+            Thank You!
+          </Text>
+        </Flex>
       </Flex>
     </>
   );
@@ -151,6 +140,7 @@ const PROJECT = [
   {
     mainSkill: "React.js",
     title: "news",
+    image: "/images/sample.png",
     link: "https://react-news-mu.vercel.app/",
     github: "https://github.com/HarryA123/React-ToyProjects/tree/main/news",
     description:
@@ -158,16 +148,18 @@ const PROJECT = [
   },
   {
     mainSkill: "React.js",
-    title: "movie",
+    title: "Movit",
+    image: "url(/images/movit_1.png)",
     link: "https://react-movie-app-three-pink.vercel.app/",
     github:
       "https://github.com/HarryA123/React-ToyProjects/tree/main/movie-app",
     description:
-      "Since the value attribute is set on our form element, the displayed value will always be this.state.value, component, the input’s value is always driven by the React state. While this means you have to type a bit more code, you can now pass the value to other UI elements too, or reset it from other event handlers.",
+      "내가 본 영화들을 기록하는 앱 입니다. 검색을 통해 원하는 영화를 찾을 수 있으며 클릭 시 상세한 영화 정보를 볼 수 있습니다. Redux toolkit, styled-components 라이브러리를 사용한 1인 프로젝트입니다.",
   },
   {
     mainSkill: "React.js",
     title: "blog",
+    image: "/images/sample.png",
     link: "https://blog-delta-olive.vercel.app/",
     github: "https://github.com/HarryA123/React-ToyProjects/tree/main/blog",
     description:

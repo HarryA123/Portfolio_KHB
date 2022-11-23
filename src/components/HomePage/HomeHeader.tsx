@@ -1,7 +1,7 @@
-import { Flex, Button, Highlight, Text } from "@chakra-ui/react";
+import { Flex, Button, Highlight, Link, Text } from "@chakra-ui/react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import React, { useState } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import { Blog } from "../../../public/icons/Blog";
 import { Email } from "../../../public/icons/Email";
 import { Github } from "../../../public/icons/Github";
@@ -31,26 +31,32 @@ function HomeHeader(props: HomeHeaderProps) {
       justifyContent="space-between"
       {...props}>
       <Flex gap="40px">
-        <Text color="white">
-          <Highlight query="01." styles={{ py: "1", color: "primary" }}>
-            01.ABOUT ME
-          </Highlight>
-        </Text>
-        <Text color="white">
-          <Highlight query="02." styles={{ py: "1", color: "primary" }}>
-            02.WORKS
-          </Highlight>
-        </Text>
-        <Button
-          w="75px"
-          h="28px"
-          bg="secondary"
-          color="white"
-          borderRadius="full"
-          fontSize="14px"
-          fontWeight="400">
-          RESUME
-        </Button>
+        <Link href="#container_2">
+          <Text color="white">
+            <Highlight query="01." styles={{ py: "1", color: "primary" }}>
+              01. ABOUT ME
+            </Highlight>
+          </Text>
+        </Link>
+        <Link href="#container_3">
+          <Text color="white">
+            <Highlight query="02." styles={{ py: "1", color: "primary" }}>
+              02. WORKS
+            </Highlight>
+          </Text>
+        </Link>
+        <Link href="https://www.notion.so/0142021ca50d4ad2a179ab0f7e93ce46">
+          <Button
+            w="75px"
+            h="28px"
+            bg="secondary"
+            color="white"
+            borderRadius="full"
+            fontSize="14px"
+            fontWeight="400">
+            RESUME
+          </Button>
+        </Link>
       </Flex>
       <Flex gap="40px">
         <Text display={!emailShow ? "none" : "inline"} color="primary">
