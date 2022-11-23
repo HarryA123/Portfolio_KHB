@@ -4,29 +4,16 @@ import React from "react";
 
 interface SkillGageProps {
   name: string;
+  gage: number;
 }
 
-function SkillGage({ name }: SkillGageProps) {
+function SkillGage({ name, gage }: SkillGageProps) {
   return (
     <Flex alignItems="center" justifyContent="space-between" w="450px">
-      <RoundName name={name}/>
-      <Flex gap="4px">
-        <Box bg="primary" boxSize="16px" />
-        <Box bg="primary" boxSize="16px" />
-        <Box bg="primary" boxSize="16px" />
-        <Box bg="primary" boxSize="16px" />
-        <Box bg="primary" boxSize="16px" />
-        <Box bg="primary" boxSize="16px" />
-        <Box bg="primary" boxSize="16px" />
-        <Box bg="primary" boxSize="16px" />
-        <Box bg="primary" boxSize="16px" />
-        <Box bg="primary" boxSize="16px" />
-        <Box bg="gray.200" boxSize="16px" />
-        <Box bg="gray.200" boxSize="16px" />
-        <Box bg="gray.200" boxSize="16px" />
-        <Box bg="gray.200" boxSize="16px" />
-        <Box bg="gray.200" boxSize="16px" />
-      </Flex>
+      <RoundName name={name} />
+      <Box w="300px" bgColor="gray.700">
+        <Box w={gage * 8} bg="primary" h="16px" />
+      </Box>
     </Flex>
   );
 }
