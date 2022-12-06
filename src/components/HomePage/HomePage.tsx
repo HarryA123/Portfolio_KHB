@@ -1,10 +1,4 @@
-import {
-  Flex,
-  Link,
-  Box,
-  Text,
-  IconButton,
-} from "@chakra-ui/react";
+import { Flex, Link, Box, Text, IconButton } from "@chakra-ui/react";
 // import gsap from "gsap/dist/gsap";
 import React from "react";
 import ProjectItem from "./_fragments/ProjectItem";
@@ -31,9 +25,7 @@ function HomePage() {
             Frontend-Developer
           </Text>
           <Link href="#container_3" margin="auto">
-            <LinkButton mt="146px">
-              WOKRS
-            </LinkButton>
+            <LinkButton mt="146px">WOKRS</LinkButton>
           </Link>
         </Flex>
         <Box pos="absolute" left="500px" top="30%">
@@ -66,12 +58,7 @@ function HomePage() {
         <Flex direction="column">
           <ListTitle name="01. ABOUT" query="01." />
           <Text fontSize="24px" w="581px" color="white">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
-            condimentum placerat amet urna facilisis semper. Platea a, cras
-            massa imperdiet elit ut. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Purus condimentum placerat amet urna facilisis
-            semper. Platea a, cras massa imperdiet elit ut.Lorem ipsum dolor sit
-            amet, consectetur
+            안녕하세요
             <br />
             <br />
             adipiscing elit. Purus semper. Platea a, cras massa imperdiet elit
@@ -137,15 +124,15 @@ function HomePage() {
 export default HomePage;
 
 const PROJECT = [
-  {
-    mainSkill: "React.js",
-    title: "news",
-    image: "/images/sample.png",
-    link: "https://react-news-mu.vercel.app/",
-    github: "https://github.com/HarryA123/React-ToyProjects/tree/main/news",
-    description:
-      "Since the value attribute is set on our form element, the displayed value will always be this.state.value, making the React state the source of truth. Since handleChange runs on every keystroke to update the React state, the displayed value will update as the user types. With a controlled component, the input’s value is always driven by the t handlers.",
-  },
+  // {
+  //   mainSkill: "React.js",
+  //   title: "news",
+  //   image: "/images/sample.png",
+  //   link: "https://react-news-mu.vercel.app/",
+  //   github: "https://github.com/HarryA123/React-ToyProjects/tree/main/news",
+  //   description:
+  //     "Since the value attribute is set on our form element, the displayed value will always be this.state.value, making the React state the source of truth. Since handleChange runs on every keystroke to update the React state, the displayed value will update as the user types. With a controlled component, the input’s value is always driven by the t handlers.",
+  // },
   {
     mainSkill: "React.js",
     title: "Movit",
@@ -154,15 +141,15 @@ const PROJECT = [
     github:
       "https://github.com/HarryA123/React-ToyProjects/tree/main/movie-app",
     description:
-      "내가 본 영화들을 기록하는 앱 입니다. 검색을 통해 원하는 영화를 찾을 수 있으며 클릭 시 상세한 영화 정보를 볼 수 있습니다. Redux toolkit, styled-components 라이브러리를 사용한 1인 프로젝트입니다.",
+      "Movit은 내가 본 영화들을 기록하는 앱 입니다. 내가 기록한 영화들만 모아서 보고, 키워드 검색을 통해 내가 원하는 영화를 찾을 수 있으며 클릭 시 시놉시스 같은 상세한 영화 정보를 볼 수 있습니다. React, react-router-dom, Axios, Redux toolkit, styled-components를 사용한 1인 프로젝트입니다.",
   },
-  {
-    mainSkill: "React.js",
-    title: "blog",
-    image: "/images/sample.png",
-    link: "https://blog-delta-olive.vercel.app/",
-    github: "https://github.com/HarryA123/React-ToyProjects/tree/main/blog",
-    description:
-      "Since the value attribute is set on our form element, the displayed value will always be this.state.value, making the React state the source of truth. Since handleChange runs on every keystroke to uy the React state. While this means you have to type a bit more code, you can now pass the value to other UI elements too, or reset it from other event handlers.",
-  },
+  // {
+  //   mainSkill: "React.js",
+  //   title: "blog",
+  //   image: "/images/sample.png",
+  //   link: "https://blog-delta-olive.vercel.app/",
+  //   github: "https://github.com/HarryA123/React-ToyProjects/tree/main/blog",
+  //   description:
+  //     "Since the value attribute is set on our form element, the displayed value will always be this.state.value, making the React state the source of truth. Since handleChange runs on every keystroke to uy the React state. While this means you have to type a bit more code, you can now pass the value to other UI elements too, or reset it from other event handlers.",
+  // },
 ];
