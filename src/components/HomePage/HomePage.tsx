@@ -56,7 +56,7 @@ function HomePage() {
         gap="20px"
         alignItems="center">
         <Flex direction="column" gap="50px">
-          <ListTitle name="01. Tech Skill" query="01." />
+          <ListTitle name="01. Tech Stack" query="01." />
           <SkillBox />
         </Flex>
       </Flex>

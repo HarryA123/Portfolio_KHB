@@ -34,7 +34,7 @@ function HomeHeader(props: HomeHeaderProps) {
         <Link href="#container_2">
           <Text color="white">
             <Highlight query="01." styles={{ py: "1", color: "primary" }}>
-              01. Tech Skill
+              01. Tech Stack
             </Highlight>
           </Text>
         </Link>
