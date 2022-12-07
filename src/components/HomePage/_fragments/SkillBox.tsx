@@ -46,7 +46,7 @@ const SKILL = [
   { name: "CSS", gage: 8 },
   { name: "JavaScript", gage: 7 },
   { name: "TypeScript", gage: 2 },
-  { name: "React.js", gage: 6 },
+  { name: "React", gage: 6 },
   { name: "Next.js", gage: 4 },
   { name: "git", gage: 6 },
   { name: "Figma", gage: 7 },

@@ -125,7 +125,7 @@ const PROJECT = [
   //     "Since the value attribute is set on our form element, the displayed value will always be this.state.value, making the React state the source of truth. Since handleChange runs on every keystroke to update the React state, the displayed value will update as the user types. With a controlled component, the input’s value is always driven by the t handlers.",
   // },
   {
-    mainSkill: "React.js",
+    mainSkill: "React",
     title: "Movit",
     image: "url(/images/movit_1.png)",
     link: "https://react-movie-app-three-pink.vercel.app/",
