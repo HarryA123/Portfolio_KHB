@@ -128,7 +128,7 @@ const PROJECT = [
     mainSkill: "React",
     title: "Movit",
     image: "url(/images/movit_1.png)",
-    link: "https://react-movie-app-three-pink.vercel.app/",
+    link: "https://portfolio-harrya123.vercel.app/",
     github:
       "https://github.com/HarryA123/React-ToyProjects/tree/main/movie-app",
     description:
