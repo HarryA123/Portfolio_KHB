@@ -55,19 +55,10 @@ function HomePage() {
         justifyContent="center"
         gap="20px"
         alignItems="center">
-        <Flex direction="column">
-          <ListTitle name="01. ABOUT" query="01." />
-          <Text fontSize="24px" w="581px" color="white">
-            안녕하세요
-            <br />
-            <br />
-            adipiscing elit. Purus semper. Platea a, cras massa imperdiet elit
-            ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus
-            condimentum placerat amet urna facilisis semper. Platea a, cras
-            massa imperdiet elit ut.
-          </Text>
+        <Flex direction="column" gap="50px">
+          <ListTitle name="01. Tech Skill" query="01." />
+          <SkillBox />
         </Flex>
-        <SkillBox />
       </Flex>
       <Flex
         id="container_3"
@@ -77,7 +68,7 @@ function HomePage() {
         gap="20px"
         alignItems="center">
         <Flex direction="column" id="workComponent" gap="50px" my="150px">
-          <ListTitle name="03. WORKS" query="03." />
+          <ListTitle name="03. Works" query="03." />
           <Flex direction="column" id="ProjectList" gap="240px">
             {PROJECT.map(item => {
               return (

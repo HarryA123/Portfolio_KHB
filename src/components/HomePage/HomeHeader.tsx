@@ -34,14 +34,14 @@ function HomeHeader(props: HomeHeaderProps) {
         <Link href="#container_2">
           <Text color="white">
             <Highlight query="01." styles={{ py: "1", color: "primary" }}>
-              01. ABOUT ME
+              01. Tech Skill
             </Highlight>
           </Text>
         </Link>
         <Link href="#container_3">
           <Text color="white">
             <Highlight query="02." styles={{ py: "1", color: "primary" }}>
-              02. WORKS
+              02. Works
             </Highlight>
           </Text>
         </Link>
