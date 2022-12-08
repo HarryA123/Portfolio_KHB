@@ -68,7 +68,7 @@ function HomePage() {
         gap="20px"
         alignItems="center">
         <Flex direction="column" id="workComponent" gap="50px" my="150px">
-          <ListTitle name="03. Works" query="03." />
+          <ListTitle name="02. Works" query="03." />
           <Flex direction="column" id="ProjectList" gap="240px">
             {PROJECT.map(item => {
               return (
