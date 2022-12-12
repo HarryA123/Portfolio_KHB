@@ -115,20 +115,20 @@ function HomePage() {
 export default HomePage;
 
 const PROJECT = [
-  // {
-  //   mainSkill: "React.js",
-  //   title: "news",
-  //   image: "/images/sample.png",
-  //   link: "https://react-news-mu.vercel.app/",
-  //   github: "https://github.com/HarryA123/React-ToyProjects/tree/main/news",
-  //   description:
-  //     "Since the value attribute is set on our form element, the displayed value will always be this.state.value, making the React state the source of truth. Since handleChange runs on every keystroke to update the React state, the displayed value will update as the user types. With a controlled component, the input’s value is always driven by the t handlers.",
-  // },
+  {
+    mainSkill: "React.js",
+    title: "news",
+    image: "/images/sample.png",
+    link: "https://react-news-mu.vercel.app/",
+    github: "https://github.com/HarryA123/React-ToyProjects/tree/main/news",
+    description:
+      "Since the value attribute is set on our form element, the displayed value will always be this.state.value, making the React state the source of truth. Since handleChange runs on every keystroke to update the React state, the displayed value will update as the user types. With a controlled component, the input’s value is always driven by the t handlers.",
+  },
   {
     mainSkill: "React",
     title: "Movit",
     image: "url(/images/movit_1.png)",
-    link: "https://portfolio-harrya123.vercel.app/",
+    link: "https://react-movie-app-three-pink.vercel.app/",
     github:
       "https://github.com/HarryA123/React-ToyProjects/tree/main/movie-app",
     description:
