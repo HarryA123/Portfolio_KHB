@@ -20,7 +20,7 @@ function ProjectItem({
   link,
 }: ProjectItemProps) {
   return (
-    <Flex gap="20px" alignItems="center">
+    <Flex gap="20px">
       <Link href={link}>
         <Box
           cursor="pointer"
