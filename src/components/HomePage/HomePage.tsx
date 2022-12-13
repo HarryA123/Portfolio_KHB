@@ -117,15 +117,6 @@ export default HomePage;
 const PROJECT = [
   {
     mainSkill: "React",
-    title: "New World News",
-    image: "url(/images/news_1.png)",
-    link: "https://react-news-mu.vercel.app/",
-    github: "https://github.com/HarryA123/React-ToyProjects/tree/main/news",
-    description:
-      "New World News 는 뉴욕타임지의 기사들을 검색하고 읽는 곳입니다. React, react-router-dom, Axios, Redux toolkit, SCSS/SASS를 사용한 1인 프로젝트입니다.",
-  },
-  {
-    mainSkill: "React",
     title: "Movit",
     image: "url(/images/movit_1.png)",
     link: "https://react-movie-app-three-pink.vercel.app/",
@@ -133,6 +124,15 @@ const PROJECT = [
       "https://github.com/HarryA123/React-ToyProjects/tree/main/movie-app",
     description:
       "Movit은 내가 본 영화들을 기록하는 곳입니다. 내가 기록한 영화들만 모아서 보고, 키워드 검색을 통해 내가 원하는 영화를 찾을 수 있으며 클릭 시 시놉시스 같은 상세한 영화 정보를 볼 수 있습니다. React, react-router-dom, Axios, Redux toolkit, styled-components를 사용한 1인 프로젝트입니다.",
+  },
+  {
+    mainSkill: "React",
+    title: "New World News",
+    image: "url(/images/news_1.png)",
+    link: "https://react-news-mu.vercel.app/",
+    github: "https://github.com/HarryA123/React-ToyProjects/tree/main/news",
+    description:
+      "New World News 는 뉴욕타임지의 기사들을 검색하고 읽는 곳입니다. React, react-router-dom, Axios, Redux toolkit, SCSS/SASS를 사용한 1인 프로젝트입니다.",
   },
   // {
   //   mainSkill: "React.js",
