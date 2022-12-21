@@ -1,7 +1,6 @@
 import { Flex, Button, Highlight, Link, Text } from "@chakra-ui/react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import React, { useState } from "react";
-// import Link from "next/link";
 import { Blog } from "../../../public/icons/Blog";
 import { Email } from "../../../public/icons/Email";
 import { Github } from "../../../public/icons/Github";
@@ -30,16 +29,16 @@ function HomeHeader(props: HomeHeaderProps) {
       zIndex="sticky"
       justifyContent="space-between"
       {...props}>
-      <Flex gap="40px">
+      <Flex gap="40px" alignItems="center">
         <Link href="#container_2">
-          <Text color="white">
+          <Text color="white" fontSize="22px">
             <Highlight query="01." styles={{ py: "1", color: "primary" }}>
               01. Tech Stack
             </Highlight>
           </Text>
         </Link>
         <Link href="#container_3">
-          <Text color="white">
+          <Text color="white" fontSize="22px">
             <Highlight query="02." styles={{ py: "1", color: "primary" }}>
               02. Works
             </Highlight>
@@ -47,18 +46,18 @@ function HomeHeader(props: HomeHeaderProps) {
         </Link>
         <Link href="https://www.notion.so/0142021ca50d4ad2a179ab0f7e93ce46">
           <Button
-            w="75px"
-            h="28px"
+            w="160px"
+            h="42px"
             bg="secondary"
             color="white"
             borderRadius="full"
-            fontSize="14px"
-            fontWeight="400">
+            fontSize="24px"
+            fontWeight="bold">
             RESUME
           </Button>
         </Link>
       </Flex>
-      <Flex gap="40px">
+      <Flex gap="40px" alignItems="center">
         <Text display={!emailShow ? "none" : "inline"} color="primary">
           harryKwak123@gmail.com
         </Text>

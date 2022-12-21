@@ -1,7 +1,7 @@
 import { Icon, IconProps } from "@chakra-ui/react";
 
 export const Github = ({ ...props }: IconProps) => (
-  <Icon viewBox="0 0 28 28" boxSize="28px" cursor="pointer" {...props}>
+  <Icon viewBox="0 0 24 24" boxSize="40px" cursor="pointer" {...props}>
     <path
       fillRule="evenodd"
       clipRule="evenodd"

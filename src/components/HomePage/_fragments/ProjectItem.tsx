@@ -1,6 +1,5 @@
-import { Flex, Image, Box, IconButton, Link, Text } from "@chakra-ui/react";
+import { Flex, Image, Box, IconButton, Link, Text } from "@chakra-ui/react"
 import React from "react";
-// import Link from "next/link";
 import { Github } from "../../../../public/icons/Github";
 
 interface ProjectItemProps {
@@ -31,6 +30,7 @@ function ProjectItem({
           backgroundSize="cover"
           backgroundImage={image}
           backgroundPosition="left"
+          transition="all 0.5s ease-in-out"
           _hover={{
             backgroundColor: "white",
           }}
@@ -45,6 +45,7 @@ function ProjectItem({
             <Text color="white">{title}</Text>
             <Link href={github}>
               <IconButton
+                size="lg"
                 color="white"
                 _hover={{ color: "primary", transform: "scale(1.3)" }}
                 variant="link"
