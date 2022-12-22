@@ -1,15 +1,64 @@
 import { Flex, Box, Link, Text, IconButton } from "@chakra-ui/react";
-// import gsap from "gsap/dist/gsap";
-import React from "react";
+import { gsap } from "gsap";
+import React, { useEffect } from "react";
 import ProjectItem from "./_fragments/ProjectItem";
 import LinkButton from "./_fragments/LinkButton";
 import ScrambleText from "./ScrambleText";
 import SkillBox from "./_fragments/SkillBox";
 import ListTitle from "./_fragments/ListTitle";
-
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { UpPage } from "../../../public/icons/UpPage";
 
+gsap.registerPlugin(ScrollTrigger);
 function HomePage() {
+  useEffect(() => {
+    gsap.set(".content2", { y: 300, opacity: 0 });
+    gsap.to(".content2", {
+      y: 0,
+      opacity: 1,
+      ease: "expo",
+      duration: 2,
+      immediateRender: false,
+      scrollTrigger: {
+        start: "top 80%",
+        end: "top 30%",
+        scrub: 4,
+        trigger: ".content2",
+        toggleActions: "restart none reverse none",
+        markers: true,
+      },
+    });
+    gsap.fromTo(
+      ".projects",
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 8,
+        scrollTrigger: {
+          start: "top 80%",
+          end: "top 30%",
+          scrub: 8,
+          trigger: "#container_3",
+          toggleActions: "restart none reverse none",
+          markers: true,
+        },
+      }
+    );
+    // gsap.to(".skillBox", {
+    //   y: 400,
+    //   // opacity: 1,
+    //   duration: 2,
+    //   scrollTrigger: {
+    //     trigger: "#container_2",
+    //     start: "top 80%",
+    //     end: "top 30%",
+    //     scrub: 4,
+    //     toggleActions: "restart none none none",
+    //     markers: true,
+    //   },
+    // });
+  }, []);
+
   return (
     <>
       <Flex id="container_1" pos="relative" bg="background" h="100vh">
@@ -55,7 +104,7 @@ function HomePage() {
         justifyContent="center"
         gap="20px"
         alignItems="center">
-        <Flex direction="column" gap="50px">
+        <Flex className="content2" direction="column" gap="50px">
           <ListTitle name="01. Tech Stack" query="01." />
           <SkillBox />
         </Flex>
@@ -141,7 +190,7 @@ const PROJECT = [
     link: "portfolio-harrya123.vercel.app/",
     github: "https://github.com/HarryA123/Portfolio_KHB",
     description:
-      "곽희빈의 작업물이 담겨있는 포트폴리오 웹사이트 입니다. React.js, Typescript, Chakra-Ui를 사용했습니다.",
+      "곽희빈의 작업물이 담겨있는 포트폴리오 웹사이트 입니다. React.js, Typescript, Chakra-Ui, GSAP를 사용했습니다.",
   },
   // {
   //   mainSkill: "React.js",
