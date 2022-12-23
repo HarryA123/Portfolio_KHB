@@ -12,6 +12,23 @@ import { UpPage } from "../../../public/icons/UpPage";
 gsap.registerPlugin(ScrollTrigger);
 function HomePage() {
   useEffect(() => {
+    gsap.to(
+      ".content1",
+      {
+        y: 300,
+        opacity: 1,
+        ease: "expo",
+        duration: 2,
+        scrollTrigger: {
+          start: "top top",
+          end: "top top",
+          scrub: 4,
+          trigger: "#container_1",
+          toggleActions: "restart none reverse none",
+          markers: true,
+        },
+      }
+    );
     gsap.set(".content2", { y: 300, opacity: 0 });
     gsap.to(".content2", {
       y: 0,
@@ -63,6 +80,7 @@ function HomePage() {
     <>
       <Flex id="container_1" pos="relative" bg="background" h="100vh">
         <Flex
+          className="content1"
           direction="column"
           fontWeight="bold"
           fontFamily="RobotoMono"
