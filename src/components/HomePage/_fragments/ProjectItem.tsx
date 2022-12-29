@@ -1,4 +1,4 @@
-import { Flex, Image, Box, IconButton, Link, Text } from "@chakra-ui/react"
+import { Flex, Image, Box, IconButton, Link, Text } from "@chakra-ui/react";
 import React from "react";
 import { Github } from "../../../../public/icons/Github";
 

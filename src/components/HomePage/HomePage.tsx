@@ -54,19 +54,6 @@ function HomePage() {
         },
       }
     );
-    // gsap.to(".skillBox", {
-    //   y: 400,
-    //   // opacity: 1,
-    //   duration: 2,
-    //   scrollTrigger: {
-    //     trigger: "#container_2",
-    //     start: "top 80%",
-    //     end: "top 30%",
-    //     scrub: 4,
-    //     toggleActions: "restart none none none",
-    //     markers: true,
-    //   },
-    // });
   }, []);
 
   return (
@@ -85,7 +72,7 @@ function HomePage() {
             Frontend-Developer
           </Text>
           <Link href="#container_3" margin="auto">
-            <LinkButton mt="146px">WOKRS</LinkButton>
+            <LinkButton mt="146px">WORKS</LinkButton>
           </Link>
         </Flex>
         <Box pos="absolute" left="500px" top="30%">
