@@ -35,7 +35,6 @@ function HomePage() {
         scrub: 4,
         trigger: ".content2",
         toggleActions: "restart none reverse none",
-        markers: true,
       },
     });
     gsap.fromTo(
@@ -50,7 +49,6 @@ function HomePage() {
           scrub: 8,
           trigger: "#container_3",
           toggleActions: "restart none reverse none",
-          markers: true,
         },
       }
     );
@@ -185,7 +183,7 @@ const PROJECT = [
     mainSkill: "React.js",
     title: "My Portfolio",
     image: "url(/images/portfolio_1.png)",
-    link: "portfolio-harrya123.vercel.app/",
+    link: "https://portfolio-harrya123.vercel.app/",
     github: "https://github.com/HarryA123/Portfolio_KHB",
     description:
       "곽희빈의 작업물이 담겨있는 포트폴리오 웹사이트 입니다. React.js, Typescript, Chakra-Ui, GSAP를 사용했습니다.",
